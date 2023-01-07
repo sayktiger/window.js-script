@@ -34,7 +34,7 @@ const form = () => {
                     statusMessage.textContent = message.succes;
                 })
                 .catch(()=>{
-                    statusMessage.textContent = message.succes;
+                    statusMessage.textContent = message.failure;
                 })
                 .finally(() =>{
                     inputs.forEach(item =>{ item.value = ""});
