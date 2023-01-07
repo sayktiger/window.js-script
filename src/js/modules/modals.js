@@ -1,3 +1,4 @@
+import changeModalState from "./changeModalForms";
 const modals = () => {
     function bindModals(triggerSelector, modalSelector, closeSelector, closeClickOverlay = true){
         const trigger = document.querySelectorAll(triggerSelector),
@@ -13,9 +14,13 @@ const modals = () => {
                 windows.forEach(item =>{
                     item.style.display = `none`;
                 });
-
+                
+                
+                
                 modal.style.display = 'block';
                 document.body.style.overflow = 'hidden';
+                
+                
             });
 
             
